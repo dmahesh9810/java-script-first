@@ -12,3 +12,11 @@
   position: absolute;
   background-color: red;
 }
+.Ccandle {
+  margin-top: 500px;
+  margin-left: 130px;
+  width: 20px;
+  height: -200px;
+  position: absolute;
+  background-color: yellow;
+}
