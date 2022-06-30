@@ -1,0 +1,64 @@
+<style>
+    
+/* carosal */
+
+.carosal img {
+  height: auto;
+  width: 100%;
+  position: fixed;
+  z-index: 1;
+}
+#image2 {
+  z-index: 1;
+}
+
+/* carosal */
+.svgItems {
+  position: relative;
+  z-index: 4;
+  /* margin-top: 450px; */
+  width: 100%;
+}
+.mid_content {
+  background-color: white;
+  z-index: 5;
+  position: relative;
+  margin-top: -10px;
+}
+
+</style>
+<div class="carosal">
+    <img
+      id="image1"
+      src="https://images.unsplash.com/photo-1612287230202-1ff1d85d1bdf?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8OXx8Z2FtZXxlbnwwfHwwfHw%3D&w=1000&q=80"
+      alt="s"
+    />
+    <img
+      id="image2"
+      src="https://cdn.arstechnica.net/wp-content/uploads/2021/02/Stadia.jpg"
+      alt="s"
+    />
+  </div>
+  <script>
+    const image1 = document.querySelector('#image1');
+const image2 = document.querySelector('#image2');
+
+let zindex = true;
+setInterval(function () {
+  if (zindex === true) {
+    image1.style.zIndex = 1;
+    image1.style.opacity = 0;
+    image2.style.opacity = 1;
+    image1.style.transition = 'opacity 5s';
+    image2.style.transition = 'opacity 5s';
+    zindex = false;
+  } else {
+    image1.style.zIndex = 2;
+    image1.style.opacity = 1;
+    image2.style.opacity = 0;
+    image1.style.transition = 'opacity 5s';
+    image2.style.transition = 'opacity 5s';
+    zindex = true;
+  }
+}, 5500);
+  </script>

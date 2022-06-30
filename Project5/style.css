@@ -1,0 +1,31 @@
+.main {
+  background-color: red;
+  width: 80%;
+  margin: 0 auto;
+  margin-top: 50px;
+  height: 500px;
+  padding-top: 50px;
+}
+
+.a {
+  background-color: black;
+  width: 90%;
+  height: 20px;
+  margin: 0 auto;
+}
+.b {
+  background-color: black;
+  width: 30%;
+  height: 20px;
+  margin-left: 5%;
+  margin-top: 30px;
+}
+.man {
+  width: 20px;
+  height: 20px;
+  background-color: green;
+  border-radius: 50%;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  margin-left: 100px;
+}

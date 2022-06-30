@@ -1,0 +1,143 @@
+<style>
+  /* nav */
+
+  .main_nav {
+    width: 100%;
+    background-color: white;
+    position: relative;
+    z-index: 10;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+      rgba(0, 0, 0, 0.3) 0px 30px 60px -30px,
+      rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+  }
+  .main_nav img {
+    width: 40px;
+    margin: 10px;
+    position: absolute;
+  }
+  .nav_item {
+    padding-left: 120px;
+    padding-top: 30px;
+    padding-bottom: 10px;
+  }
+  .main_nav li {
+    display: inline;
+    margin-right: 50px;
+    margin-bottom: 10px;
+    list-style: none;
+  }
+  .nav_item a {
+    color: black;
+    text-decoration: none;
+  }
+  .nav_item a:hover {
+    color: red;
+    text-decoration: none;
+  }
+  .auth {
+    float: right;
+  }
+  .toggele {
+    float: right;
+    margin-right: 30px;
+    margin-top: 10px;
+    display: none;
+    background-color: white;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+      rgba(0, 0, 0, 0.3) 0px 30px 60px -30px,
+      rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+  }
+  .toggele_btn {
+    width: 50px;
+    height: 50px;
+    border-radius: 5px;
+    background-color: white;
+    align-items: center;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+      rgba(0, 0, 0, 0.3) 0px 30px 60px -30px,
+      rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+  }
+  .a {
+    width: full;
+    height: 1px;
+    margin-top: 5px;
+    background-color: white;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+      rgba(0, 0, 0, 0.3) 0px 30px 60px -30px,
+      rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+  }
+  @media only screen and (max-width: 600px) {
+    .nav_item_content {
+      display: none;
+      animation-name: example;
+      animation-duration: 4s;
+    }
+    .main_nav li {
+      display: block;
+      opacity: 10;
+    }
+    .auth {
+      float: left;
+    }
+    .nav_item {
+      padding-left: 20px;
+      padding-top: 60px;
+      padding-bottom: 60px;
+    }
+    .toggele {
+      display: inline;
+    }
+  }
+  /* nav */
+</style>
+<div class="main_nav">
+  <div>
+    <img src="img/logo.png" alt="" />
+    <span class="toggele">
+      <button class="toggele_btn">
+        <div class="a"></div>
+        <div class="a"></div>
+        <div class="a"></div>
+      </button>
+    </span>
+    <div class="nav_item">
+      <span class="nav_item_content">
+        <li><a href="/index.html">Home</a></li>
+        <li><a href="">About</a></li>
+        <li><a href="">Contact</a></li>
+        <span class="auth">
+          <li><a href="">Login</a></li>
+          <li><a href="">Register</a></li>
+        </span>
+      </span>
+    </div>
+  </div>
+</div>
+<script>
+  'use strict';
+  const navItemContent = document.querySelector('.nav_item_content');
+  const toggleBtn = document.querySelector('.toggele_btn');
+  let clickToggle = false;
+  const toggleCLick = toggleBtn.addEventListener('click', function () {
+    if (clickToggle === false) {
+      navItemContent.style.display = 'block';
+      clickToggle = true;
+      console.log(clickToggle);
+    } else {
+      navItemContent.style.display = 'none';
+      clickToggle = false;
+      console.log(clickToggle);
+    }
+  });
+  function reportWindowSize() {
+    if (window.innerWidth >= 600) {
+      navItemContent.style.display = 'inline';
+      clickToggle = false;
+    } else {
+      navItemContent.style.display = 'none';
+      clickToggle = false;
+    }
+  }
+
+  window.addEventListener('resize', reportWindowSize);
+</script>

@@ -11,45 +11,76 @@
       rel="stylesheet"
     />
     <title>Document</title>
-    <link rel="stylesheet" href="style.css" />
+    <style>
+      body {
+        margin: 0;
+      }
+      * {
+        scroll-behavior: smooth;
+      }
+      html {
+        font-family: 'Roboto Slab', serif;
+      }
+      .foots{
+        position: absolute;
+        margin-top: 50px;
+        z-index: 50;
+      }
+      .svgItems{
+        margin-top: 450px;
+        position: relative;
+        width: 100%;
+        z-index: 5;
+      }
+      @media only screen and (max-width: 1224px) {
+  .svgItems {
+    margin-top: 400px;
+  }
+}
+@media only screen and (max-width: 1132px) {
+  .svgItems {
+    margin-top: 350px;
+  }
+}
+@media only screen and (max-width: 981px) {
+  .svgItems {
+    margin-top: 300px;
+  }
+}
+@media only screen and (max-width: 864px) {
+  .svgItems {
+    margin-top: 250px;
+  }
+}
+@media only screen and (max-width: 747px) {
+  .svgItems {
+    margin-top: 200px;
+  }
+}
+@media only screen and (max-width: 624px) {
+  .svgItems {
+    margin-top: 150px;
+  }
+}
+@media only screen and (max-width: 608px) {
+  .svgItems {
+    margin-top: 140px;
+  }
+}
+@media only screen and (max-width: 595px) {
+  .svgItems {
+    margin-top: 75px;
+  }
+}
+     
+
+    </style>
   </head>
   <body>
     <div>
-      <div class="carosal">
-        <img
-          id="image1"
-          src="http://epingi.com/wp-content/uploads/2021/08/Lost-in-Random-PC-Version-Full-Game-Setup-Free-Download.jpg"
-          alt="s"
-        />
-        <img
-          id="image2"
-          src="https://www.impulsegamer.com/articles/wp-content/uploads/2021/10/maxresdefault-1.jpg"
-          alt="s"
-        />
-      </div>
-      <div class="main_nav">
-        <div>
-          <img src="img/logo.png" alt="" />
-          <span class="toggele">
-            <button class="toggele_btn">
-              <div class="a"></div>
-              <div class="a"></div>
-              <div class="a"></div>
-            </button>
-          </span>
-          <div class="nav_item">
-            <span class="nav_item_content">
-              <li><a href="">Home</a></li>
-              <li><a href="">About</a></li>
-              <li><a href="">Contact</a></li>
-              <span class="auth">
-                <li><a href="">Login</a></li>
-                <li><a href="">Register</a></li>
-              </span>
-            </span>
-          </div>
-        </div>
-      </div>
+      <div class="carosalPage"></div>
+      <div class="nav"></div>
+  
       <div class="svgItems">
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
           <path
@@ -59,38 +90,12 @@
           ></path>
         </svg>
       </div>
-      <div class="mid_content">
-        <div class="watch">
-          <div class="time">
-            <span class="a12">12</span>
-            <span class="a1">1</span>
-            <span class="a2">2</span>
-            <span class="a3">3</span>
-            <span class="a4">4</span>
-            <span class="a5">5</span>
-            <span class="a6">6</span>
-            <span class="a7">7</span>
-            <span class="a8">8</span>
-            <span class="a9">9</span>
-            <span class="a10">10</span>
-            <span class="a11">11</span>
-          </div>
-          <span class="watch_dot"></span>
-          <span class="watch_small_dot"></span>
-          <span class="watch_sec"></span>
-          <span class="watch_min"></span>
-          <span class="watch_hr"></span>
-        </div>
-        <div style="margin-top: 100px">
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum
-          quidem fugiat fugit cupiditate odit repellat ea, ipsam culpa quod
-          rerum. Sit aut excepturi iusto laboriosam ex delectus blanditiis?
-          Vero, voluptates. Lorem ipsum dolor sit amet consectetur adipisicing
-          elit. Enim excepturi sint velit facilis perferendis repudiandae.
-          Dignissimos praesentium, nisi temporibus amet laborum asperiores
-          officia eius natus, voluptate nesciunt maiores minus reprehenderit.
-        </div>
+      <div class="midcontent">
+       
       </div>
+    </div>
+    <div class="footer">
+      
     </div>
     <script src="script.js"></script>
   </body>
