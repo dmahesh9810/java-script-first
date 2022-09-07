@@ -1,0 +1,9 @@
+* {
+  /* overflow: hidden; */
+  overflow-x: hidden;
+  margin: 0;
+}
+canvas {
+  position: absolute;
+  border: 10px solid black;
+}

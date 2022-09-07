@@ -9,7 +9,7 @@ btn1.addEventListener('click', function () {
 document.querySelector('.close').addEventListener('click', function () {
   document.querySelector('.model').classList.add('hidden');
 
-  document.getElementById('overlay').style.display = 'none';
+  document.getElementById('overlay').style.display = 'none';Project1/script.js
 });
 
 document.addEventListener('keydown', function cans(e) {

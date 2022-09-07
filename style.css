@@ -1,5 +1,8 @@
 * {
-  background-color: aquamarine;
+  background-color: rgb(255, 255, 255);
+  color: black;
+  font-size: large;
+  text-decoration: none;
 }
 .main {
   text-align: center;
